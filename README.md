@@ -1,11 +1,13 @@
-# Jellyfin FSK Badge
+# FSK-Kennzeichen in Jellyfin
 
-Ersetzt in Jellyfin Web die textuelle Altersfreigabe (wie `<div class="mediaInfoItem mediaInfoText mediaInfoOfficialRating">FSK-6</div>`) dynamisch durch passende FSK-Logos.
+Ersetzt die textbasierte FSK-Altersfreigabe (`FSK-0`, `FSK-6`, `FSK-12`, `FSK-16`, `FSK-18`) in der Jellyfin-Weboberfläche automatisch durch die entsprechenden FSK-Kennzeichen.
 
-## Hinweise zu Rechten & Entstehung
+<p align="center">
+  <img alt="Static Badge" src="https://img.shields.io/badge/made_with-Google_Gemini-8E75B2?style=flat-square&logo=googlegemini">
+  <img alt="GitHub License" src="https://img.shields.io/github/license/flosletsplay/jellyfin-fsk-badge?style=flat-square">
 
-* **Code & Dokumentation:** Dieser Code sowie diese `README.md` wurden mit Unterstützung von Gemini (KI) erstellt und von dir angepasst.
-* **FSK-Logos:** Die FSK-Kennzeichen und -Logos gehören der **Freiwilligen Selbstkontrolle der Filmwirtschaft (FSK)** bzw. den jeweiligen Rechteinhabern und unterliegen deren Marken- und Urheberrechten. Dieses Projekt dient ausschließlich privaten Zwecken.
+<br>
+</p>
 
 ## Voraussetzung
 
@@ -14,11 +16,31 @@ Für die Einbindung von eigenem JavaScript in Jellyfin Web wird das **JavaScript
 
 ## Installation
 
-1. **JavaScript-Injector-Plugin installieren:**  
-   Installiere das Plugin von `n00bcodr` gemäß dessen Repository-Anleitung in deinem Jellyfin-Server und starte Jellyfin neu.
-2. **Logos & Script bereitstellen:**  
-   In diesem Repository (`FlosLetsPlay/jellyfin-fsk-badge`) liegen bereits die Logos sowie die angepasste Datei [`jellyfin-fsk-badge.js`](https://github.com/FlosLetsPlay/jellyfin-fsk-badge/blob/main/jellyfin-fsk-badge.js). Stelle sicher, dass die Bildpfade in `jellyfin-fsk-badge.js` zu deinem Jellyfin-Setup / deiner Web-Auslieferung passen (z. B. über Raw-URL, Reverse Proxy oder lokales Hosting).
-3. **Script im Plugin hinterlegen:**  
-   Öffne in Jellyfin das **Dashboard → Plugins → JavaScript Injector**, füge den Inhalt aus [`jellyfin-fsk-badge.js`](https://github.com/FlosLetsPlay/jellyfin-fsk-badge/blob/main/jellyfin-fsk-badge.js) ein (oder lade das Script darüber ein) und speichere die Einstellungen.
-4. **Browser-Cache leeren:**  
-   Lade Jellyfin im Browser einmal hart neu (`Strg + F5` bzw. `Cmd + Shift + R`), damit das Script und die Logos geladen werden.
+### 1. JavaScript Injector installieren
+1. Öffne in Jellyfin das **Dashboard → Plugins → Repositories** (Katalog-Einstellungen).
+2. Füge das Plugin-Repository von `n00bcodr` hinzu (siehe Anleitung im [JavaScript Injector Repository](https://github.com/n00bcodr/Jellyfin-JavaScript-Injector)).
+3. Installiere das Plugin **JavaScript Injector** aus dem Katalog und starte den Jellyfin-Server neu.
+
+### 2. Skript einfügen
+1. Navigiere in Jellyfin zu **Dashboard → Plugins → JavaScript Injector**.
+2. `Allow external script URLs` können sie akvivieren.
+3. Erstelle ein neues Skript (z. B. mit dem Namen `Jellyfin FSK Badge`).
+4. Kopiere Sie entweder den Inhalt aus der JavaScript-Datei dieses Repositories in das Code-Feld oder nutzen Sie
+```
+https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/jellyfin-fsk-badge.js
+```
+5. Speichere die Einstellungen und lade die Jellyfin-Weboberfläche im Browser neu (`Strg + F5` bzw. `Cmd + Shift + R`).
+
+---
+
+## Rechtliche Hinweise & Urheberrecht
+
+* **FSK-Kennzeichen:** Die Marken- und Urheberrechte an den offiziellen FSK-Kennzeichen liegen ausschließlich bei der **Freiwilligen Selbstkontrolle der Filmwirtschaft GmbH (FSK)**. Dieses Repository dient lediglich der technischen Anpassung der privaten Jellyfin-Oberfläche. Bitte beachte die jeweiligen Nutzungsbedingungen der FSK bei der Verwendung der Grafiken.
+* **Hinweise zur Erstellung:** Sowohl der JavaScript-Code als auch diese `README.md` wurden mit Unterstützung von **Google Gemini** erstellt.
+
+---
+
+## Hinweise zur Kompatibilität
+
+* Funktioniert in allen Clients, die die Jellyfin-Weboberfläche nutzen (Browser, Jellyfin Media Player etc.).
+* Native Clients (z. B. Android TV, Apple TV, Roku) laden keine Web-Plugins und zeigen weiterhin die native Darstellung an.
