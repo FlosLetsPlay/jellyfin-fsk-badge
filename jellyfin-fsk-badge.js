@@ -27,7 +27,7 @@
       img.alt = text;
       img.title = text;
       img.loading = "lazy";
-      img.style.height = "26px";
+      img.style.height = "50px";
       img.style.width = "auto";
       img.style.display = "block";
 
