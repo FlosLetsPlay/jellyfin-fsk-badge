@@ -1,15 +1,15 @@
 (function () {
   const FSK_LOGOS = {
-    "FSK-0": "/web/assets/fsk/fsk-0.png", // Temp. Wird ersetzt.
-    "FSK 0": "/web/assets/fsk/fsk-0.png",
-    "FSK-6": "/web/assets/fsk/fsk-6.png",
-    "FSK 6": "/web/assets/fsk/fsk-6.png",
-    "FSK-12": "/web/assets/fsk/fsk-12.png",
-    "FSK 12": "/web/assets/fsk/fsk-12.png",
-    "FSK-16": "/web/assets/fsk/fsk-16.png",
-    "FSK 16": "/web/assets/fsk/fsk-16.png",
-    "FSK-18": "/web/assets/fsk/fsk-18.png",
-    "FSK 18": "/web/assets/fsk/fsk-18.png",
+    "FSK-0": "https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-0.png",
+    "FSK 0": "https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-0.png",
+    "FSK-6": "https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-6.png",
+    "FSK 6": "https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-6.png",
+    "FSK-12": "https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-12.png",
+    "FSK 12": "https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-12.png",
+    "FSK-16": "https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-16.png",
+    "FSK 16": "https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-16.png",
+    "FSK-18": "https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-18.png",
+    "FSK 18": "https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-18.png",
   };
 
   function replaceOfficialRatings(root = document) {
