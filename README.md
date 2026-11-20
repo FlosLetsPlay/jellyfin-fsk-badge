@@ -1,13 +1,16 @@
 # FSK-Kennzeichen in Jellyfin
-
+<img alt="Static Badge" src="https://img.shields.io/badge/made_with-Google_Gemini-8E75B2?style=flat-square&logo=googlegemini">
+<br><img alt="GitHub License" src="https://img.shields.io/github/license/flosletsplay/jellyfin-fsk-badge?style=flat-square">
+<br>
 Ersetzt die textbasierte FSK-Altersfreigabe (`FSK-0`, `FSK-6`, `FSK-12`, `FSK-16`, `FSK-18`) in der Jellyfin-Weboberfläche automatisch durch die entsprechenden FSK-Kennzeichen.
 
-<p align="center">
-  <img alt="Static Badge" src="https://img.shields.io/badge/made_with-Google_Gemini-8E75B2?style=flat-square&logo=googlegemini">
-  <img alt="GitHub License" src="https://img.shields.io/github/license/flosletsplay/jellyfin-fsk-badge?style=flat-square">
-
-<br>
-</p>
+| Text           |                                                                         Bild                                                                        |
+|----------------|:---------------------------------------------------------------------------------------------------------------------------------------------------:|
+| FSK-0, FSK 0   | ![FSK 0 Kennzeichen](https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-0.png "FSK 0 Kennzeichen")    |
+| FSK-6, FSK 6   | ![FSK 6 Kennzeichen](https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-6.png "FSK 6 Kennzeichen")    |
+| FSK-12, FSK 12 | ![FSK 12 Kennzeichen](https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-12.png "FSK 12 Kennzeichen") |
+| FSK-16, FSK 16 | ![FSK 16 Kennzeichen](https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-16.png "FSK 16 Kennzeichen") |
+| FSK-18, FSK 18 | ![FSK 18 Kennzeichen](https://raw.githubusercontent.com/FlosLetsPlay/jellyfin-fsk-badge/refs/heads/main/fsk-badges/fsk-18.png "FSK 18 Kennzeichen") |
 
 ## Voraussetzung
 
